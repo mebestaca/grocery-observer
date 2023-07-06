@@ -1,0 +1,59 @@
+html,
+body {
+    height: 100vh;
+}
+
+h1 {
+    background-color: rgba(0, 213, 255, 0.558);
+    padding: 20px;
+    width: 100%;
+    margin: 0%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+.row {
+    height: 100%;
+    margin: 0%;
+}
+
+.col-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body {
+    background: url('../images/background.jpeg') fixed;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+@media screen and (max-width: 767px){
+    body {
+        background: url('../images/background.jpeg') fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 50%;
+    }
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        height: auto;
+    }
+
+    .col-12 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+}  
+
